@@ -1,0 +1,22 @@
+1. Scapy
+Scapy is the core library you're using for packet sniffing and analysis
+
+pip install scapy
+
+
+2. Winpcap or Npcap (Windows only)
+Since you're on Windows 11, Scapy needs a packet capture driver to sniff packets.
+- Recommended: Npcap
+- Download and install it.
+- During installation, check:
+- “Install Npcap in WinPcap API-compatible mode”
+- “Support raw 802.11 traffic (and monitor mode)”
+Without Npcap, Scapy won’t be able to sniff live packets.
+
+
+3. Python Interpreter
+Make sure Python is installed and added to your system PATH.
+
+python --version
+
+If not installed, grab it from python.org.
